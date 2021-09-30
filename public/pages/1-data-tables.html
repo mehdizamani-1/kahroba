@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>جداول</title>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/libs/css/style.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="../assets/libs/css/datatables.css" />
+    <style>
+        table.tableOptions {
+            margin-top: 1.5em !important;
+            margin-bottom: 1.5em !important;
+        }
+        table thead,
+        table tfoot {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="dashboard-wrapperOne">
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <a class="navbar-brand pr-0 pt-2 pb-2 mr-2" href="../index.html"> <img class="" style="width: 40px; height: 40px;" src="../assets/images/logoooo.png" alt="" /> سامانه هوشمند اتوبوسرانی قم </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto p-0 pl-4 navbar-right-top">
+                    <li class="nav-item">
+                        <div id="custom-search" class="top-search-bar"><input class="form-control searchInput" type="text" placeholder="جستجو کنید..." /></div>
+                    </li>
+                    <li class="nav-item dropdown notification">
+                        <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left notification-dropdown">
+                            <li>
+                                <div class="notification-title">اعلان ها</div>
+                                <div class="notification-list">
+                                    <div class="list-group" dir="ltr">
+                                        <a href="#" class="list-group-item list-group-item-action active">
+                                            <div class="notification-info">
+                                                <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle" /> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle" /> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle" /> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle" /> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-footer"><a href="#">نمایش همه</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown connection">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-left connection-dropdown">
+                            <li class="connection-list">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/github.png" alt="" /> <span>لینک سریع1</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt="" /> <span>لینک سریع2</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt="" /> <span>لینک سریع3</span></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt="" /> <span>لینک سریع4</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt="" /><span> لینک سریع5</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0">
+                                        <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt="" /> <span>لینک سریع6</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="conntection-footer"><a href="#">بیشتر</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown nav-user">
+                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="nav-user-info text-right">
+                                <h5 class="mb-0 text-white nav-user-name">نام کاربری شما</h5>
+                                <span class="status"></span><span class="ml-2">آنلاین</span>
+                            </div>
+                            <a class="dropdown-item text-right" href="#"><i class="fas fa-user ml-3"></i>پروفایل</a> <a class="dropdown-item text-right" href="#"><i class="fas fa-cog ml-3"></i>تنظیمات</a>
+                            <a class="dropdown-item text-right" href="#"><i class="fas fa-power-off ml-3"></i>خروج</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list" style="overflow: auto !important;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column p-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"> <i class="fa fa-fw fa-user-circle"></i> پیشخوان </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"> <i class="fa fa-fw fa-rocket"></i> مدیریت کاربران </a>
+                            <div id="submenu-2" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد حساب کاربری </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست کاربران </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"> <i class="fas fa-fw fa-chart-pie"></i>مدیریت شرکت ها </a>
+                            <div id="submenu-3" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست شرکت ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد شرکت جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"> <i class="fab fa-fw fa-wpforms"> </i> مدیریت ایستگاه ها </a>
+                            <div id="submenu-4" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> وضعیت ایستگاه ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> وضعیت پایانه ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد ایستگاه جدید </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ویرایش اطلاعات ایستگاه </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال داده به ایستگاه </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال داده به پایانه </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> انتخاب برنامه سر فاصله ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"> <i class="fas fa-fw fa-table"> </i> مدیریت خطوط اصلی </a>
+                            <div id="submenu-5" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست خطوط </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد خط جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"> <i class="fas fa-fw fa-file"> </i> پاسگاه های بازرسین </a>
+                            <div id="submenu-6" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست کلیه پاسگاه ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد پاسگاه جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7">
+                                <i class="fas fa-fw fa-inbox"></i>مدیریت اتوبوس ها <span class="badge p-1 mr-1 font-10 badge-secondary">جدید</span>
+                            </a>
+                            <div id="submenu-7" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست اتوبوس ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال داده گروهی </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ایجاد اتوبوس جدید </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> وضعیت تابلو های نمایشگر </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"> <i class="fas fa-fw fa-columns"> </i>مدیریت سیم کارت ها </a>
+                            <div id="submenu-8" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> وضعیت شارژ سیمکارت ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> وضعیت کد شارژ سیمکارت ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"> <i class="fas fa-fw fa-map-marker-alt"> </i> مدیریت پنل پیامکی </a>
+                            <div id="submenu-9" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال پیامک جدید </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پیامک های ارسالی </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پیامک های دریافتی </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"> <i class="fas fa-f fa-folder"> </i> مدیریت اخبار </a>
+                            <div id="submenu-10" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> لیست خبرها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال خبر </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-12" aria-controls="submenu-12"> <i class="fas fa-fw fa-map-marker-alt"> </i> گزارشات سامانه </a>
+                            <div id="submenu-12" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> گزارشات موضوعی </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پیمایش آفلاین مسیر </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> جستجوی پیشرفته </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پایش آنلاین خطوط </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پایش آنلاین اتوبوس ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-13" aria-controls="submenu-13"> <i class="fas fa-fw fa-map-marker-alt"> </i> مدیریت تنظیمات </a>
+                            <div id="submenu-13" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> تنظیمات راهبردی </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تنظیم حالت تعمیر </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پیکر بندی فیلد ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ابزارک دسترسی سریع </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> دسته بندی سر فاصله ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پشتیبان گیری و بازیابی </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تاریخچه بروزرسانی ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-14" aria-controls="submenu-14"> <i class="fas fa-fw fa-map-marker-alt"> </i> صندوق پستی </a>
+                            <div id="submenu-14" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسال پیغام جدید </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> دریافتی ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> ارسالی ها </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> پیش نویس ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-15" aria-controls="submenu-15"> <i class="fas fa-fw fa-map-marker-alt"> </i> حساب کاربری </a>
+                            <div id="submenu-15" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> مشخصات کاربری </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تغییر تلفن همراه </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تغییر آدرس ایمیل </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تغییر کلمه عبور </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-16" aria-controls="submenu-16"> <i class="fas fa-fw fa-map-marker-alt"> </i> تایید اطلاعات </a>
+                            <div id="submenu-16" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href=""> تایید شماره تلفن همراه </a></li>
+                                    <li class="nav-item"><a class="nav-link" href=""> تایید پست الکترونیک </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="dashboard-wrapper">
+        <div class="container-fluid dashboard-content">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header">
+                        <h2 class="pageheader-title">جداول</h2>
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">پیشخوان</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">جداول</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">جدول اطلاعات</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <h5 class="card-header">جدول نمایش اطلاعات</h5>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table tableOptions table-striped table-bordered first">
+                                    <thead>
+                                    <tr>
+                                        <th>آیکون</th>
+                                        <th>کد خودرو</th>
+                                        <th>نوع خودرو</th>
+                                        <th>وضعیت فعالیت</th>
+                                        <th>آخرین تنظیمات</th>
+                                        <th>آخرین ارتباط</th>
+                                        <th>آنتن</th>
+                                        <th>وضعیت</th>
+                                        <th>دما</th>
+                                        <th>درب ها</th>
+                                        <th>رله ها</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    <tr>
+                                        <td>آیکون</td>
+                                        <td>کد خودرو</td>
+                                        <td>نوع خودرو</td>
+                                        <td>وضعیت فعالیت</td>
+                                        <td>آخرین تنظیمات</td>
+                                        <td>آخرین ارتباط</td>
+                                        <td>آنتن</td>
+                                        <td>وضعیت</td>
+                                        <td>دما</td>
+                                        <td>درب ها</td>
+                                        <td>رله ها</td>
+                                        <td>عملیات</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>آیکون</th>
+                                        <th>کد خودرو</th>
+                                        <th>نوع خودرو</th>
+                                        <th>وضعیت فعالیت</th>
+                                        <th>آخرین تنظیمات</th>
+                                        <th>آخرین ارتباط</th>
+                                        <th>آنتن</th>
+                                        <th>وضعیت</th>
+                                        <th>دما</th>
+                                        <th>درب ها</th>
+                                        <th>رله ها</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0 text-white">جدول اطلاعات شماره دو</h5>
+                            <p>توضیحات مختصر درباره جدول یا هر متن دیگری</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="table tableOptions table-striped table-bordered second" style="width: 100%;">
+                                    <thead>
+                                    <tr>
+                                        <th>کد خط</th>
+                                        <th>عنوان</th>
+                                        <th>رنگ خط</th>
+                                        <th>طول مسیر</th>
+                                        <th>شعاع ایستگاه‌ها</th>
+                                        <th>بازرس خط</th>
+                                        <th>تعداد اتوبوس‌ها</th>
+                                        <th>آخرین تغییرات</th>
+                                        <th>وضعیت سامانه‌ای</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>خط شماره یک</td>
+                                        <td>1E00FF 9182FF</td>
+                                        <td>۱۳ کیلومتر</td>
+                                        <td>۵۰ متر</td>
+                                        <td>محمود احمدی</td>
+                                        <td>10</td>
+                                        <td>۱۳۹۹-۰۰۹-۰۰۳ ۱۵:۵۸:۲۴</td>
+                                        <td>@</td>
+                                        <td><button>دکمه ها</button></td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <th>کد خط</th>
+                                        <th>عنوان</th>
+                                        <th>رنگ خط</th>
+                                        <th>طول مسیر</th>
+                                        <th>شعاع ایستگاه‌ها</th>
+                                        <th>بازرس خط</th>
+                                        <th>تعداد اتوبوس‌ها</th>
+                                        <th>آخرین تغییرات</th>
+                                        <th>وضعیت سامانه‌ای</th>
+                                        <th>عملیات</th>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <a href="../index.html" class="mr-1">خانه</a> <a href="1slidingLoginForm.html" class="mr-1">لاگین |</a> <a href="1form-validation.html" class="mr-1">فرم ها |</a>
+                        <a href="1-chart-morris.html" class="mr-1">نمودارها |</a> <a href="1-data-tables.html" class="mr-1">جدول ها |</a> <a href="1icon-fontawesome.html" class="mr-1">آیکون ها |</a>
+                        <a href="1-maps-leaflet.html" class="mr-1">نقشه ها</a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="text-md-left footer-links d-none d-sm-block"><a href="javascript: void(0);">درباره سامانه</a> <a href="javascript: void(0);">پشتیبانی</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<script src="../assets/vendor/multi-select/js/jquery.multi-select.js"></script>
+<script src="../assets/libs/js/main-js.js"></script>
+<!--<script src="../../../../../cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>-->
+<!--<script src="../../../../../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>-->
+<!--<script src="../../../../../cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>-->
+<script src="../assets/libs/js/datatables.js"></script>
+<script src="../assets/libs/js/buttons.bootstrap4.min.js"></script>
+<script src="../assets/libs/js/pdfmake.min.js"></script>
+<script src="../assets/libs/js/vfs_fonts.js"></script>
+<script src="../assets/libs/js/buttons.html5.min.js"></script>
+<script src="../assets/libs/js/jszip.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".tableOptions").DataTable({
+            oLanguage: {
+                sSearch: "جستجو کنید...",
+                sZeroRecords: "هیچ داده ای با عبارت مورد نظر یافت نشد.",
+                sLoadingRecords: "لطفا شکیبا باشید...",
+                sEmptyTable: "هیچ داده ای برای نمایش در دسترس موجود نیست...",
+                oPaginate: { sFirst: "اولین", sLast: "آخرین", sNext: "بعدی", sPrevious: "قبلی" },
+                sLengthMenu:
+                    "نمایش <select>" +
+                    '<option value="10">10</option>' +
+                    '<option value="20">20</option>' +
+                    '<option value="30">30</option>' +
+                    '<option value="40">40</option>' +
+                    '<option value="50">50</option>' +
+                    '<option value="-1">همه</option>' +
+                    "</select> نتایج",
+                sInfo: "نمایش _START_ تا _END_ از _TOTAL_ نتیجه",
+            },
+        });
+    });
+</script>
+</body>
+</html>

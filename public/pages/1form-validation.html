@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+
+<body>
+<div class="dashboard-wrapperOne">
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top"><a class="navbar-brand pr-0 pt-2 pb-2 mr-2" href="../index.html"> <img class="" style="width: 40px; height: 40px;" src="../assets/images/logoooo.png" alt=""> سامانه هوشمند اتوبوسرانی قم </a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                                                                                                                                                                                                                                       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto p-0 pl-4 navbar-right-top">
+                    <li class="nav-item">
+                        <div id="custom-search" class="top-search-bar"> <input class="form-control searchInput" type="text" placeholder="جستجو کنید..."></div>
+                    </li>
+                    <li class="nav-item dropdown notification"> <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left notification-dropdown">
+                            <li>
+                                <div class="notification-title"> اعلان ها</div>
+                                <div class="notification-list">
+                                    <div class="list-group " dir="ltr">
+                                        <a href="#" class="list-group-item list-group-item-action active">
+                                            <div class="notification-info"> <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info"> <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info"> <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info"> <span class="notification-list-user-img"> <img src="../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"> </span>
+                                                <div class="notification-list-user-block">
+                                                    <div class="notification-list-user-name text-right mr-0">کاربر گرامی</div>
+                                                    <div class="text-right">موردی برای نمایش به شما وجود دارد</div>
+                                                    <div class="notification-date">2 دقیقه پیش</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-footer"> <a href="#">نمایش همه</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown connection"> <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-left connection-dropdown">
+                            <li class="connection-list">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/github.png" alt=""> <span>لینک سریع1</span></a></div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/dribbble.png" alt=""> <span>لینک سریع2</span></a></div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/dropbox.png" alt=""> <span>لینک سریع3</span></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png" alt=""> <span>لینک سریع4</span></a></div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png" alt=""><span> لینک سریع5</span></a></div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 p-0"> <a href="#" class="connection-item"><img src="../assets/images/slack.png" alt=""> <span>لینک سریع6</span></a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="conntection-footer"><a href="#">بیشتر</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown nav-user"> <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                        <div
+                                class="dropdown-menu dropdown-menu-left nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="nav-user-info text-right">
+                                <h5 class="mb-0 text-white nav-user-name">نام کاربری شما</h5> <span class="status"></span><span class="ml-2">آنلاین</span></div> <a class="dropdown-item text-right" href="#"><i class="fas fa-user ml-3"></i>پروفایل</a> <a class="dropdown-item text-right" href="#"><i class="fas fa-cog ml-3"></i>تنظیمات</a>                                <a class="dropdown-item text-right" href="#"><i class="fas fa-power-off ml-3"></i>خروج</a></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list" style="overflow: auto !important; ">
+            <nav class="navbar navbar-expand-lg navbar-light"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse"
+                     id="navbarNav">
+                    <ul class="navbar-nav flex-column p-0">
+                        <li class="nav-item "> <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"> <i class="fa fa-fw fa-user-circle"></i> پیشخوان </a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"> <i class="fa fa-fw fa-rocket"></i> مدیریت کاربران </a>
+                            <div id="submenu-2" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/general.html"> ایجاد حساب کاربری </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/carousel.html"> لیست کاربران </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"> <i class="fas fa-fw fa-chart-pie"></i>مدیریت شرکت ها </a>
+                            <div id="submenu-3" class="collapse submenu"
+                                 style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/chart-c3.html"> لیست شرکت ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/chart-chartist.html"> ایجاد شرکت جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item "> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"> <i class="fab fa-fw fa-wpforms"> </i> مدیریت ایستگاه ها </a>
+                            <div id="submenu-4" class="collapse submenu"
+                                 style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/form-elements.html"> وضعیت ایستگاه ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/form-validation.html"> وضعیت پایانه ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/multiselect.html"> ایجاد ایستگاه جدید </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/datepicker.html"> ویرایش اطلاعات ایستگاه </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/bootstrap-select.html"> ارسال داده به ایستگاه </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/bootstrap-select.html"> ارسال داده به پایانه </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/bootstrap-select.html"> انتخاب برنامه سر فاصله ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"> <i class="fas fa-fw fa-table"> </i> مدیریت خطوط اصلی </a>
+                            <div id="submenu-5" class="collapse submenu"
+                                 style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/general-table.html"> لیست خطوط </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/data-tables.html"> ایجاد خط جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"> <i class="fas fa-fw fa-file"> </i> پاسگاه های بازرسین </a>
+                            <div id="submenu-6" class="collapse submenu"
+                                 style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/blank-page.html"> لیست کلیه پاسگاه ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/login.html"> ایجاد پاسگاه جدید </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"> <i class="fas fa-fw fa-inbox"></i>مدیریت اتوبوس ها <span class="badge p-1 mr-1 font-10 badge-secondary">جدید</span> </a>
+                            <div
+                                    id="submenu-7" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/inbox.html"> لیست اتوبوس ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/email-details.html"> ارسال داده گروهی </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/email-details.html"> ایجاد اتوبوس جدید </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/email-details.html"> وضعیت تابلو های نمایشگر </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"> <i class="fas fa-fw fa-columns"> </i>مدیریت سیم کارت ها </a>
+                            <div id="submenu-8" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/icon-fontawesome.html"> وضعیت شارژ سیمکارت ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/icon-fontawesome.html"> وضعیت کد شارژ سیمکارت ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"> <i class="fas fa-fw fa-map-marker-alt"> </i> مدیریت پنل پیامکی </a>
+                            <div id="submenu-9" class="collapse submenu"
+                                 style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> ارسال پیامک جدید </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> پیامک های ارسالی </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> پیامک های دریافتی </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"> <i class="fas fa-f fa-folder"> </i> مدیریت اخبار </a>
+                            <div id="submenu-10" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> لیست خبرها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> ارسال خبر </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-12" aria-controls="submenu-12"> <i class="fas fa-fw fa-map-marker-alt"> </i> گزارشات سامانه </a>
+                            <div id="submenu-12" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> گزارشات موضوعی </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> پیمایش آفلاین مسیر </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> جستجوی پیشرفته </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> پایش آنلاین خطوط </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> پایش آنلاین اتوبوس ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-13" aria-controls="submenu-13"> <i class="fas fa-fw fa-map-marker-alt"> </i> مدیریت تنظیمات </a>
+                            <div id="submenu-13" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> تنظیمات راهبردی </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تنظیم حالت تعمیر </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> پیکر بندی فیلد ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> ابزارک دسترسی سریع </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> دسته بندی سر فاصله ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> پشتیبان گیری و بازیابی </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تاریخچه بروزرسانی ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-14" aria-controls="submenu-14"> <i class="fas fa-fw fa-map-marker-alt"> </i> صندوق پستی </a>
+                            <div id="submenu-14" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> ارسال پیغام جدید </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> دریافتی ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> ارسالی ها </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> پیش نویس ها </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-15" aria-controls="submenu-15"> <i class="fas fa-fw fa-map-marker-alt"> </i> حساب کاربری </a>
+                            <div id="submenu-15" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> مشخصات کاربری </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تغییر تلفن همراه </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تغییر آدرس ایمیل </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تغییر کلمه عبور </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-16" aria-controls="submenu-16"> <i class="fas fa-fw fa-map-marker-alt"> </i> تایید اطلاعات </a>
+                            <div id="submenu-16" class="collapse submenu">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-google.html"> تایید شماره تلفن همراه </a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="pages/map-vector.html"> تایید پست الکترونیک </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="dashboard-wrapper">
+        <div class="container-fluid dashboard-content">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header">
+                        <h2 class="pageheader-title"> نمایش صفحه فرم</h2>
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link"> پیشخوان </a></li>
+                                    <li class="breadcrumb-item"><a href="../pages/1form-validation.html" class="breadcrumb-link">فرم</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">پیش نمایش صفحه فرم</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-10 col-lg-11 col-md-12 col-sm-12 col-12 m-auto">
+                    <div class="card">
+                        <h5 class="card-header"> مشخصات اصلی حساب کاربری جدید</h5>
+                        <div class="card-body">
+                            <form id="form" data-parsley-validate="" novalidate="">
+                                <div class="w-100 mb-4">
+                                    <h4>سطح کاربری</h4>
+                                    <div class="parent-checklist-form">
+                                        <div id="checklist-form"> <input id="01" type="checkbox" name="r" value="1" checked> <label for="01">کاربر سامانه</label></div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="w-100 mb-4">
+                                    <h4>سطح دسترسی</h4><label class="custom-control custom-checkbox custom-control-inline"><div class="parent-checklist-form"><div id="checklist-form"> <input id="02" type="checkbox" name="r" value="1" checked> <label for="02">صندوق پستی</label></div>
+                                </div>
+                                </label><label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input "><span class="custom-control-label">مدیریت کاربران</span> </label> <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت خطوط</span> </label>                        <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">پاسگاه</span> </label> <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت شرکت ها </span> </label>                        <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت اتوبوس ها </span> </label> <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت ایستگاه ها </span> </label>                        <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت سیستم پیامکی </span> </label> <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت سیمکارت ها </span> </label>                        <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">دسترسی به گزارشات</span> </label> <label class="custom-control custom-checkbox custom-control-inline"> <input type="checkbox" class="custom-control-input"><span class="custom-control-label">مدیریت تنظیمات</span> </label></div>
+                                <hr>
+                                <div class="w-100 mb-4">
+                                    <h4>وضعیت حساب</h4> <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">فعال</span> </label> <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">غیر فعال</span> </label>                        <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">مجوز موقت</span> </label> <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inline" class="custom-control-input"><span class="custom-control-label">معلق</span> </label></div>
+                                <hr>
+                                <div class="w-100 mb-4">
+                                    <h4>جنسیت</h4> <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inlinee" checked="" class="custom-control-input"><span class="custom-control-label">زن</span> </label> <label class="custom-control custom-radio custom-control-inline"> <input type="radio" name="radio-inlinee" class="custom-control-input"><span class="custom-control-label">مرد</span> </label></div>
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-lg-12 col-form-label text-right">نام</label>
+                                            <div class="col-12 col-sm-12 col-lg-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">نام خانوادگی</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">کد ملی</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">شماره همراه</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">پست الکترونیک </label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="div-parent-username- p-2 mt-5">
+                            <form action="">
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">نام کاربری</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">کلمه عبور</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">تصویر پرسنلی</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-10 col-lg-11 col-md-12 col-sm-12 col-12 m-auto">
+                <div class="card">
+                    <h5 class="card-header"> مشخصات فرعی حساب کاربری جدید</h5>
+                    <div class="card-body">
+                        <form id="form" data-parsley-validate="" novalidate="">
+                            <div class="div-parent-username- p-2 mt-5">
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">تاریخ تولید</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-lg-2 col-form-label text-right">آدرس منزل</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group row">
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">تلفن منزل</label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                        <div class="col-12 col-lg-6 row"> <label for="inputEmail2" class="col-12 col-form-label text-right">توضیحات </label>
+                                            <div class="col-12"> <input id="inputEmail2" type="email" required="" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2 pt-sm-5 mt-1">
+                                <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0"> <label class="be-checkbox custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input"> </label></div>
+                                <div class="col-12 pl-0">
+                                    <div class="row"> <button type="submit" class="btn btn-space btn-primary col-6 m-auto">ایجاد حساب</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"> <a href="../index.html" class="mr-1">خانه</a> <a href="1slidingLoginForm.html" class="mr-1">لاگین |</a> <a href="1form-validation.html" class="mr-1">فرم ها |</a> <a href="1-chart-morris.html" class="mr-1">نمودارها |</a> <a href="1-data-tables.html"
+                                                                                                                                                                                                                                                                                                          class="mr-1">جدول ها |</a> <a href="1icon-fontawesome.html" class="mr-1">آیکون ها |</a> <a href="1-maps-leaflet.html" class="mr-1">نقشه ها</a></div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="text-md-right footer-links d-none d-sm-block"> <a href="javascript: void(0);">درباره سامانه</a> <a href="javascript: void(0);">پشتیبانی</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<script src="../assets/vendor/parsley/parsley.js"></script>
+<script src="../assets/libs/js/main-js.js"></script>
+<script>
+    $('#form').parsley();
+</script>
+<script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    $(document).ready(function() {
+        $('form input , .form-group input').focus(function() {
+            if ($(this).val() == "") {
+                $(this).css('border', 'linear-gradient("to bottom,red,green, yellow, purple") 0 0 100% 0;') $(this).parent().siblings('label').css('transform', 'translateY(0px) rotateX(360deg)')
+            }
+        }) $('form input , .form-group input').focusout(function() {
+            if ($(this).val() == "") {
+                $(this).css('border-image', 'linear-gradient("to right,#621940,#843b62, #f67e7d, #ffb997") 0 0 100% 0;') $(this).parent().siblings('label').css({
+                    'transform': 'translateY(35px)'
+                })
+            }
+        })
+    })
+</script>
+</body>
+
+</html>

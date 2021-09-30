@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>login</title>
+	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../assets/libs/css/style.css" />
+	<link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css" />
+
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="../assets/vendor/jquery/jquery-3.5.1.min.js"> -->
+	<script src="../assets/vendor/jquery/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/j`s/bootstrap.min.js"></script> -->
+	<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+	<style type="text/css">
+		* {
+			transform: translate();
+			margin: 0;
+			padding: 0;
+		}
+
+		.site-link {
+			padding: 5px 15px;
+			position: fixed;
+			z-index: 99999;
+			background: #fff;
+			box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+			right: 30px;
+			bottom: 30px;
+			border-radius: 10px;
+		}
+
+		.site-link img {
+			width: 30px;
+			height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="alert-bootstrap-">
+	
+		<div class="alert alert-success alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>موفقیت!</strong> این جعبه هشدار می تواند یک اقدام موفقیت آمیز یا مثبت را نشان دهد.
+		</div>
+		<div class="alert alert-info alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>اطلاعات!</strong> این جعبه هشدار می تواند یک تغییر اطلاعاتی یا عملکرد خنثی را نشان دهد.
+		</div>
+		<div class="alert alert-warning alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+		</div>
+		<div class="alert alert-danger alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+		</div>
+		<div class="alert alert-primary alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Primary!</strong> Indicates an important action.
+		</div>
+		<div class="alert alert-secondary alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Secondary!</strong> Indicates a slightly less important action.
+		</div>
+		<div class="alert alert-dark alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Dark!</strong> Dark grey alert.
+		</div>
+		<div class="alert alert-light alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>Light!</strong> Light grey alert.
+		</div>
+	</div>
+	<div class="body-sliding-form container-fluid m-sm-0">
+		<div class="veen-sliding-form">
+			<div class="login-btn-sliding-form splits-sliding-form">
+				<p>میخواهید وارد شوید؟</p>
+				<button class="active">کلیک کنید</button>
+			</div>
+			<div class="rgstr-btn splits-sliding-form">
+				<p>پسورد خود را فراموش کردید؟</p>
+				<button>کلیک کنید</button>
+			</div>
+			<div class="wrapper-sliding-form">
+				<form id="login-sliding-form" tabindex="500">
+					<h3 class="m-0 p-0">ورود</h3>
+					<div class="mail-sliding-form"><label for="001">ایمیل یا نام کاربری</label> <input id="001"
+							type="mail" name="" /></div>
+					<div class="passwd-sliding-form"><label for="002">رمز عبور</label> <input id="002" type="password"
+							name="" /></div>
+					<div class="recaptcha-image-parent">
+						<div class="recaptcha-image p-t-20">
+							<div class="captcha">
+								<span id="captcha1"><img
+										src="../assets/images/recaptcha-image/recaptcha-image.png" /></span>
+								<button type="button" class="btn btn-danger reload" id="reload2"
+									style="padding: 0 !important; width: 30px; transform: translate(0px, -10px);">&#x21bb;</button>
+							</div>
+						</div>
+						<div class="recaptcha-input row"><input class="type"="text" /></div>
+					</div>
+					<div class="submit-sliding-form"><button class="dark">ادامه.</button></div>
+				</form>
+				<form id="register" tabindex="502">
+					<h3 class="m-0 p-0">بازیابی کلمه عبور</h3>
+					<div class="name-sliding-form"><label for="004">نام کاربری یا پست الکترونیک</label> <input id="004"
+							type="text" name="" /></div>
+					<div class="recaptcha-image-parent">
+						<div class="recaptcha-image p-t-20">
+							<div class="captcha">
+								<span id="captcha1"><img
+										src="../assets/images/recaptcha-image/recaptcha-image.png" /></span>
+								<button type="button" class="btn btn-danger reload" id="reload2"
+									style="padding: 0 !important; width: 30px; transform: translate(0px, -10px);">&#x21bb;</button>
+							</div>
+						</div>
+						<div class="recaptcha-input row"><input class="type"="text" /></div>
+					</div>
+					<div class="submit-sliding-form"><button class="dark">ثبت نام</button></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<a href="../index.html" class="mr-1">خانه</a> <a href="1slidingLoginForm.html" class="mr-1">لاگین
+						|</a> <a href="1form-validation.html" class="mr-1">فرم ها |</a>
+					<a href="1-chart-morris.html" class="mr-1">نمودارها |</a> <a href="1-data-tables.html"
+						class="mr-1">جدول ها |</a> <a href="1icon-fontawesome.html" class="mr-1">آیکون ها |</a>
+					<a href="1-maps-leaflet.html" class="mr-1">نقشه ها</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/libs/js/scriptSlidingLoginForm.js"></script>
+<script>
+	$(function () {
+
+
+		function alertBootstrap() {
+			$(".alert").fadeIn()
+		}
+		setTimeout(alertBootstrap,2000) 
+		setTimeout(alertBootstrapdn,5000) 
+		function alertBootstrapdn() {
+			$(".alert").fadeOut()
+		}
+
+
+	});
+</script>
+
+</html>
